@@ -9,5 +9,5 @@ data:
   host: '0.0.0.0'
   pgdatabase: 'weightracker'
   pgport: '5432'
-  hosturl: 'http://20.88.167.69' # External IP of ingress-nginx-controller
+  hosturl: 'http://20.81.22.73' # External IP of ingress-nginx-controller
   oktaurl: 'https://dev-16863907.okta.com'
