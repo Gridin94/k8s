@@ -1,0 +1,7 @@
+pg_user          = "postgres"
+pg_database      = "postgres"
+pg_password      = "p@ssw0rd42"
+cluster_name     = "akswt"
+acr_name         = "weightrackerACR"
+rg_name          = "k8s"
+env              = "k8swt"
