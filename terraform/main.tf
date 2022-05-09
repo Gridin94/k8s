@@ -29,23 +29,23 @@ resource "azurerm_postgresql_server" "postgresql" {
 
 # Create new database
 
-# resource "azurerm_postgresql_database" "wt_db" {
-#   name                = var.pg_database
-#   resource_group_name = azurerm_resource_group.k8s.name
-#   server_name         = azurerm_postgresql_server.postgresql.name
-#   charset             = "UTF8"
-#   collation           = "English_United States.1252"
-# }
+resource "azurerm_postgresql_database" "wt_db" {
+  name                = var.pg_database
+  resource_group_name = azurerm_resource_group.k8s.name
+  server_name         = azurerm_postgresql_server.postgresql.name
+  charset             = "UTF8"
+  collation           = "English_United States.1252"
+}
 
-# # Create container registry
+# Create container registry
 
-# resource "azurerm_container_registry" "acr" {
-#   name                = var.acr_name
-#   resource_group_name = azurerm_resource_group.k8s.name
-#   location            = azurerm_resource_group.k8s.location
-#   sku                 = "Basic"
-#   admin_enabled       = true
-# }
+resource "azurerm_container_registry" "acr" {
+  name                = var.acr_name
+  resource_group_name = azurerm_resource_group.k8s.name
+  location            = azurerm_resource_group.k8s.location
+  sku                 = "Basic"
+  admin_enabled       = true
+}
 
 # Create AKS cluster
 
