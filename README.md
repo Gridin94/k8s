@@ -94,5 +94,5 @@ Result:
 
 Application running after adding some data.
 
-<img src="https://user-images.githubusercontent.com/90269123/142867015-95ef7fcd-9efb-48b9-91de-c651424ed16a.png" width="800" height="400" alt="result">
+<img src="https://user-images.githubusercontent.com/100672115/167387484-082f3e7f-26d4-4032-8bbd-2c7b1895abbe.png" width="800" height="400" alt="result">
 
